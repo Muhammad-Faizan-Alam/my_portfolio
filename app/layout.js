@@ -1,5 +1,7 @@
 import "./globals.css";
 import Sidebar from "./components/Sidebar";
+import { slabo } from "./ui/fonts";
+import { Providers } from "./ui/providers";
 
 export const metadata = {
   title: "Portfolio App",
@@ -8,10 +10,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className="flex min-h-screen max-w-screen">
+    <html lang="en" suppressHydrationWarning>
+      <body className={`flex min-h-screen max-w-screen ${slabo.className} dark:bg-white`}>
+        <Providers>
           <Sidebar />
           {children}
+        </Providers>
       </body>
     </html>
   );
