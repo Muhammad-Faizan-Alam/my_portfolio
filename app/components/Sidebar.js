@@ -1,18 +1,47 @@
 'use client';
 import Image from 'next/image'
 import Link from 'next/link';
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { links, socialLinks } from './store';
+import { usePathname } from 'next/navigation';
+import clsx from 'clsx';
 
 const Sidebar = () => {
     // Mobile sidebar state
     const [open, setOpen] = useState(false);
+    const [activeId, setActiveId] = useState('');
+    const pathname = usePathname();
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
+    useEffect(() => {
+        const sectionIds = links
+            .map(link => link.href.startsWith('#') ? link.href.replace('#', '') : null)
+            .filter(Boolean);
+
+        const handleScroll = () => {
+            let current = '';
+            for (const id of sectionIds) {
+                const el = document.getElementById(id);
+                if (el) {
+                    const rect = el.getBoundingClientRect();
+                    if (rect.top <= 120 && rect.bottom > 120) {
+                        current = id;
+                        break;
+                    }
+                }
+            }
+            setActiveId(current);
+        };
+
+        window.addEventListener('scroll', handleScroll, { passive: true });
+        handleScroll();
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
     return (
-        <div>
+        <div className='fixed'>
             {/* Desktop Sidebar */}
             <div className='h-screen w-[20vw] md:block hidden p-3 bg-blue-950 dark:bg-gray-950 text-white'>
                 <div className='h-full w-full flex flex-col items-center justify-center gap-5'
@@ -43,11 +72,21 @@ const Sidebar = () => {
                             )
                         })}
                     </div>
-                    <div className='w-[80%] mt-auto dark:text-gray-400'>
+                    <div className='w-[80%] md:w-[100%] mt-auto dark:text-gray-400'>
                         {links.map((link, index) => {
                             const { name, href, icon } = link;
+                            // For hash links, compare with activeId
+                            const isActive = href.startsWith('#') && activeId === href.replace('#', '');
                             return (
-                                <Link key={index} href={href} className='flex flex-wrap gap-5 mb-5 text-xl font-semibold items-center' >
+                                <Link
+                                    key={index}
+                                    href={href}
+                                    className={clsx(
+                                        'flex flex-wrap gap-5 mb-5 text-xl font-semibold items-center transition-all duration-300',
+                                        isActive
+                                            ? 'text-cyan-400 dark:text-blue-400 font-bold'
+                                            : 'text-white hover:text-cyan-400 dark:hover:text-blue-400'
+                                    )} >
                                     <span
                                         dangerouslySetInnerHTML={{ __html: icon }}></span>
                                     {name}

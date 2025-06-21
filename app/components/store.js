@@ -6,13 +6,18 @@ export const links = [
     },
     {
         name: "About",
-        href: "#about",
+        href: "#About",
         icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M2 20c0-4.418 4.03-8 10-8s10 3.582 10 8"/></svg>`
     },
     {
         name: "Projects",
-        href: "#projects",
+        href: "#Projects",
         icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/></svg>`
+    },
+    {
+        name: "Experience",
+        href: "#Experience",
+        icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>`
     },
     {
         name: "Services",
@@ -21,7 +26,7 @@ export const links = [
     },
     {
         name: "Contact",
-        href: "#contact",
+        href: "#Contact",
         icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M21 10.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v4.5"/><path d="M21 10.5l-9 6.5-9-6.5"/><path d="M3 19h18"/></svg>`
     }
 ];
