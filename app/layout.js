@@ -11,7 +11,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`flex min-h-screen max-w-screen ${slabo.className} dark:bg-white`}>
+      <body className={`flex min-h-screen max-w-screen ${slabo.className}`}>
         <Providers>
           <Sidebar />
           {children}
