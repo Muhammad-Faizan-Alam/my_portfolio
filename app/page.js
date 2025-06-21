@@ -5,16 +5,11 @@ import Contact from './components/Contact';
 import Services from './components/Services';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
+import { sections } from './components/store';
+import Arrow from './ui/Arrow';
+import Link from 'next/link';
 
 const page = () => {
-  const sections = [
-    // { name: 'Home', prev: 'none', next: 'About' },
-    { name: 'About', prev: 'Home', next: 'Projects' },
-    { name: 'Projects', prev: 'About', next: 'Experience' },
-    { name: 'Experience', prev: 'Projects', next: 'Services' },
-    { name: 'Services', prev: 'Experience', next: 'Contact' },
-    { name: 'Contact', prev: 'Services', next: 'None' },
-  ]
   return (
     <div className='md:ml-[20vw] md:w-[75vw] max-w-screen p-12 transition-all duration-300'>
       {/* Home */}
@@ -28,15 +23,17 @@ const page = () => {
             <div
               key={index}
               id={name}
-              className="group relative md:border border-emerald-700 md:hover:border-2 hover:border-emerald-700 rounded-4xl hover:md:shadow-2xl hover:shadow-emerald-700 w-full md:p-6 mb-20 transition-all duration-1000"
-            >
+              className="group relative md:border border-blue-950 md:hover:border-2 dark:border-emerald-700 rounded-4xl hover:md:shadow-2xl hover:shadow-blue-950/80 dark:hover:shadow-emerald-700 w-full md:p-6 mb-20 transition-all duration-1000">
               {/* top options */}
               <div
-                className="absolute w-[20%] left-[70%] -top-6 p-2 bg-white rounded-xl border-2 border-transparent opacity-0 pointer-events-none transition-all duration-1000 group-hover:opacity-100 group-hover:pointer-events-auto">
+                className="absolute xl:w-[20%] w-[30%] xl:left-[70%] left-[60%] -top-6 p-2 bg-white rounded-xl border-2 border-transparent opacity-0 pointer-events-none transition-all duration-1000 group-hover:opacity-100 group-hover:pointer-events-auto flex flex-wrap justify-between items-center">
                 <ThemeToggle />
+
+                <Link href={prev} className="text-blue-950 dark:text-emerald-700 -rotate-90" title='previous section'><Arrow/></Link>
+                <Link href={next} className="text-blue-950 dark:text-emerald-700 rotate-90" title='next section'><Arrow/></Link>
               </div>
-              <h2 className="text-3xl font-bold text-blue-950/80 dark:text-emerald-700">{name}</h2>
               {/* main content */}
+              <h2 className="text-3xl font-bold text-blue-950/80 dark:text-emerald-700">{name}</h2>
               {name === 'About' && (<About />)}
               {name === 'Projects' && (<Projects />)}
               {name === 'Experience' && (<Experience />)}

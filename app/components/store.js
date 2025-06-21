@@ -54,3 +54,11 @@ export const socialLinks = [
         icon: `<svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6.5l-10 7-10-7"/></svg>`
     }
 ];
+
+export const sections = [
+    { name: 'About', prev: '/', next: '#Projects' },
+    { name: 'Projects', prev: '#About', next: '#Experience' },
+    { name: 'Experience', prev: '#Projects', next: '#Services' },
+    { name: 'Services', prev: '#Experience', next: '#Contact' },
+    { name: 'Contact', prev: '#Services', next: '/' },
+];
