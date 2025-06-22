@@ -2,6 +2,7 @@ import "./globals.css";
 import Sidebar from "./components/Sidebar";
 import { slabo } from "./ui/fonts";
 import { Providers } from "./ui/providers";
+import SocialWidget from "./components/SocialWidget";
 
 export const metadata = {
   title: "Portfolio App",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
         <Providers>
           <div className="flex flex-wrap">
             <Sidebar />
+            <SocialWidget />
             {children}
           </div>
         </Providers>
