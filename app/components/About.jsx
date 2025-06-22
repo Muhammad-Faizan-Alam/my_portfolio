@@ -15,7 +15,7 @@ const About = () => {
             <Image
               width={180}
               height={180}
-              src='/globe.svg'
+              src='/profile.jpeg'
               alt='profile'
               className="rounded-full border-4 border-blue-200 dark:border-emerald-700 shadow-xl transition-transform duration-500 group-hover:scale-105 bg-white"
             />
@@ -27,7 +27,7 @@ const About = () => {
 
         {/* Content */}
         <div className="flex-1 w-full">
-          <h3 className="text-2xl sm:text-3xl font-extrabold text-blue-950/90 dark:text-emerald-400 mb-3 tracking-tight">
+          <h3 className="text-xl sm:text-2xl mt-4 font-extrabold text-blue-950/90 dark:text-emerald-400 mb-3 tracking-tight">
             Full Stack Web Developer & Computer Scientist
           </h3>
           <p className="mb-6 text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed">

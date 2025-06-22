@@ -8,14 +8,18 @@ import Projects from './components/Projects';
 import { sections } from './components/store';
 import Arrow from './ui/Arrow';
 import Link from 'next/link';
+import Footer from './components/Footer';
+import Home from './components/Home';
 
 const page = () => {
   return (
-    <div className='md:ml-[20vw] md:w-[75vw] max-w-screen p-12 transition-all duration-300'>
+    <div className='md:ml-[20vw] md:w-[100%] max-w-screen transition-all duration-300'>
       {/* Home */}
-      <></>
+      <Home/>
 
-      {/* Other Sections */}
+
+      <div className='p-12'>
+        {/* Other Sections */}
       {
         sections.map((sec, index) => {
           const { name, prev, next } = sec;
@@ -43,6 +47,8 @@ const page = () => {
           )
         })
       }
+      </div>
+      <Footer/>
     </div>
   )
 }

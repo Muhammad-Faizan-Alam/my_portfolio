@@ -50,8 +50,9 @@ const Sidebar = () => {
                     <Image
                         width={100}
                         height={100}
-                        src="globe.svg"
+                        src="/profile.jpeg"
                         alt='logo'
+                        className='rounded-full border-4 border-blue-200 dark:border-emerald-700 shadow-xl transition-transform duration-500 group-hover:scale-105 bg-white'
                     />
                     <h1 className='text-3xl font-bold'>Faizan</h1>
                     <div className='flex flex-wrap gap-5'>
@@ -92,7 +93,7 @@ const Sidebar = () => {
                             )
                         })}
                     </div>
-                    <footer className='mt-auto pt-8 text-xs dark:text-blue-200 opacity-80'>
+                    <footer className='mt-auto lg:block md:hidden pt-8 text-xs dark:text-blue-200 opacity-80'>
                         &copy; All Rights Reserved
                         <Link className='text-blue-500 font-bold'
                             href="/"> faizan</Link>
@@ -127,7 +128,7 @@ const Sidebar = () => {
                                 <Image
                                     width={60}
                                     height={60}
-                                    src="globe.svg"
+                                    src="/profile.jpeg"
                                     alt='logo'
                                     className="rounded-full border-2 border-blue-200 dark:border-blue-900 shadow-lg"
                                 />

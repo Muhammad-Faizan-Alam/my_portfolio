@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Financial Dashboard",
     desc: "A real-time Financial Managing app with authentication. Powered by Next.js and Next-Auth.",
-    image: "/project3.jpg",
+    image: "/projects/budgetHive.png",
     tags: ["Next.js", "Next-Auth", "PostgreSQL"],
     link: "https://financial-dashboard-6wqm.vercel.app",
     github: "https://github.com/Muhammad-Faizan-Alam/financial-dashboard"
