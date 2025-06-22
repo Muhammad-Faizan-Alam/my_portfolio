@@ -1,16 +1,28 @@
 'use client';
 import React, { useRef, useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const formRef = useRef(null);
   const [sent, setSent] = useState(false);
 
-  // Dummy handler (replace with your email service or API)
+
   const handleSubmit = (e) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => setSent(false), 3000);
-    formRef.current.reset();
+    // emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, formRef.current, process.env.USER_ID)
+    emailjs.sendForm(
+      'service_abc123',
+      'template_xyz456',
+      formRef.current,
+      'uQwXyZ123456'
+    )
+      .then(() => {
+        setSent(true);
+        setTimeout(() => setSent(false), 3000);
+        formRef.current.reset();
+      }, (error) => {
+        alert('Failed to send: ' + error.text);
+      });
   };
 
   return (
