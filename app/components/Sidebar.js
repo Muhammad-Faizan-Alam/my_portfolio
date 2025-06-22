@@ -3,14 +3,12 @@ import Image from 'next/image'
 import Link from 'next/link';
 import React, { useState, useEffect } from 'react'
 import { links, socialLinks } from './store';
-import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 
 const Sidebar = () => {
     // Mobile sidebar state
     const [open, setOpen] = useState(false);
     const [activeId, setActiveId] = useState('');
-    const pathname = usePathname();
 
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
@@ -41,9 +39,9 @@ const Sidebar = () => {
     }, []);
 
     return (
-        <div className='fixed'>
+        <div className=''>
             {/* Desktop Sidebar */}
-            <div className='h-screen w-[20vw] md:block hidden p-3 bg-blue-950 dark:bg-gray-950 text-white'>
+            <div className='h-screen w-[20vw] md:block hidden p-3 bg-blue-950 dark:bg-gray-950 text-white fixed'>
                 <div className='h-full w-full flex flex-col items-center justify-center gap-5'
                     style={{
                         backgroundImage:
@@ -84,8 +82,8 @@ const Sidebar = () => {
                                     className={clsx(
                                         'flex flex-wrap gap-5 mb-5 text-xl font-semibold items-center transition-all duration-300',
                                         isActive
-                                            ? 'text-cyan-400 dark:text-blue-400 font-bold'
-                                            : 'text-white hover:text-cyan-400 dark:hover:text-blue-400'
+                                            ? 'text-blue-400 dark:text-gray-500 font-bold'
+                                            : 'text-white hover:text-blue-400 dark:hover:text-gray-500'
                                     )} >
                                     <span
                                         dangerouslySetInnerHTML={{ __html: icon }}></span>

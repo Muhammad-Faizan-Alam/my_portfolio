@@ -10,8 +10,8 @@ const About = () => {
         Over the years, I've gained experience working with various programming languages and frameworks.
         I enjoy building meaningful projects, especially in the field of web development.
       </p>
-      <div className='flex flex-wrap items-center justify-between mt-5'>
-        <div className='w-[30%]'>
+      <div className='flex flex-wrap items-center justify-center mt-5'>
+        <div className='md:w-[30%] w-[100%]'>
           <Image
           width={200} height={200}
           src='/globe.svg' alt='profile' />
@@ -19,9 +19,9 @@ const About = () => {
         
 
         {/* content */}
-        <div className='w-[70%]'>
-          <h3 className='text-2xl font-bold text-blue-950/80 dark:text-emerald-700 mb-4'>Full Stack Web Developer.</h3>
-          <div className='flex flex-wrap gap-4 mb-2 text-xl'>
+        <div className='lg:w-[70%] w-[100%]'>
+          <h3 className='text-2xl font-bold text-blue-950/80 dark:text-emerald-700 mb-4'>Full Stack Web Developer & Computer Scientist.</h3>
+          <div className='flex flex-wrap justify-between gap-4 mb-2 text-xl'>
             {/* name */}
             <div className='flex flex-wrap items-center gap-2'>
               <Arrow />
@@ -33,6 +33,12 @@ const About = () => {
               <Arrow />
               <h4 className='font-bold'>Age: </h4>
               <p>22</p>
+            </div>
+            {/* Degree */}
+            <div className='flex flex-wrap items-center gap-2'>
+              <Arrow />
+              <h4 className='font-bold'>Degree: </h4>
+              <p>BSCS</p>
             </div>
             {/* location */}
             <div className='flex flex-wrap items-center gap-2'>

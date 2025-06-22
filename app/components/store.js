@@ -10,14 +10,14 @@ export const links = [
         icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M2 20c0-4.418 4.03-8 10-8s10 3.582 10 8"/></svg>`
     },
     {
-        name: "Projects",
-        href: "#Projects",
-        icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/></svg>`
-    },
-    {
         name: "Experience",
         href: "#Experience",
         icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2"/><path d="M9 12h6"/><path d="M12 9v6"/></svg>`
+    },
+    {
+        name: "Projects",
+        href: "#Projects",
+        icon: `<svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/></svg>`
     },
     {
         name: "Services",
@@ -56,9 +56,9 @@ export const socialLinks = [
 ];
 
 export const sections = [
-    { name: 'About', prev: '/', next: '#Projects' },
-    { name: 'Projects', prev: '#About', next: '#Experience' },
-    { name: 'Experience', prev: '#Projects', next: '#Services' },
-    { name: 'Services', prev: '#Experience', next: '#Contact' },
+    { name: 'About', prev: '/', next: '#Experience' },
+    { name: 'Experience', prev: '#About', next: '#Projects' },
+    { name: 'Projects', prev: '#Experience', next: '#Services' },
+    { name: 'Services', prev: '#Projects', next: '#Contact' },
     { name: 'Contact', prev: '#Services', next: '/' },
 ];
