@@ -53,7 +53,7 @@ const Services = () => {
         <p className="text-center text-gray-600 dark:text-gray-300 mb-10 max-w-2xl mx-auto">
           I offer a range of services to help you build, launch, and grow your digital product with modern web technologies and design.
         </p>
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="grid gap-8 lg:grid-cols-2">
           {services.map((srv, idx) => (
             <div
               key={srv.title}

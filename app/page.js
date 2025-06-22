@@ -23,7 +23,7 @@ const page = () => {
             <div
               key={index}
               id={name}
-              className="group relative md:border border-blue-950 md:hover:border-2 dark:border-emerald-700 rounded-4xl hover:md:shadow-2xl hover:shadow-blue-950/80 dark:hover:shadow-emerald-700 w-full md:p-6 mb-20 transition-all duration-1000">
+              className="group relative md:border border-blue-700 md:hover:border-2 dark:border-emerald-700 rounded-4xl hover:md:shadow-2xl hover:shadow-blue-950/80 dark:hover:shadow-emerald-700 w-full md:p-6 mb-20 transition-all duration-1000">
               {/* top options */}
               <div
                 className="absolute xl:w-[20%] w-[30%] xl:left-[70%] left-[60%] -top-6 p-2 bg-white rounded-xl border-2 border-transparent opacity-0 pointer-events-none transition-all duration-1000 md:group-hover:opacity-100 md:group-hover:pointer-events-auto flex flex-wrap justify-between items-center">
@@ -33,7 +33,7 @@ const page = () => {
                 <Link href={next} className="text-blue-950 dark:text-emerald-700 rotate-90" title='next section'><Arrow/></Link>
               </div>
               {/* main content */}
-              <h2 className="text-3xl font-bold text-blue-950/80 dark:text-emerald-700">{name}</h2>
+              {/* <h2 className="text-3xl font-bold text-blue-950/80 dark:text-emerald-700">{name}</h2> */}
               {name === 'About' && (<About />)}
               {name === 'Projects' && (<Projects />)}
               {name === 'Resume' && (<Resume />)}

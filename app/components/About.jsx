@@ -4,8 +4,11 @@ import Arrow from '../ui/Arrow'
 
 const About = () => {
   return (
-    <section className="relative py-8 px-2 sm:px-6 md:px-10">
-      <div className="backdrop-blur-md p-6 md:p-10 flex flex-col md:flex-row items-center gap-8 transition-all duration-700">
+    <section className="relative py-8 px-2">
+      <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950 dark:text-emerald-400 mb-2 tracking-tight text-center">
+          <span className="bg-gradient-to-r from-blue-600 to-emerald-400 dark:from-emerald-400 dark:to-blue-700 bg-clip-text text-transparent">About Me</span>
+        </h2>
+      <div className="backdrop-blur-md flex flex-col lg:flex-row items-center gap-8 transition-all duration-700">
         {/* Profile Image */}
         <div className="flex-shrink-0 flex justify-center items-center w-full md:w-auto">
           <div className="relative group">
@@ -55,13 +58,18 @@ const About = () => {
             <div className="flex items-center gap-2">
               <Arrow />
               <span className="font-bold">Email:</span>
-              <a href="mailto:alifaizanch3101@gmail.com" className="underline hover:text-blue-700 dark:hover:text-emerald-400 transition">alifaizanch3101@gmail.com</a>
+              <a
+                href="mailto:alifaizanch3101@gmail.com"
+                className="underline break-all hover:text-blue-700 dark:hover:text-emerald-400 transition"
+              >
+                alifaizanch3101@gmail.com
+              </a>
             </div>
             {/* Phone */}
             <div className="flex items-center gap-2">
               <Arrow />
               <span className="font-bold">Phone:</span>
-              <a href="tel:+923184757136" className="font-mono underline hover:text-blue-700 dark:hover:text-emerald-400 transition">+923184757136</a>
+              <a href="tel:+923184757136" className="font-mono underline break-all hover:text-blue-700 dark:hover:text-emerald-400 transition">+923184757136</a>
             </div>
             {/* Freelance */}
             <div className="flex items-center gap-2">
