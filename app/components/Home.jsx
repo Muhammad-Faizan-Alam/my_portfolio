@@ -1,5 +1,6 @@
 'use client'
 import { useEffect, useRef, useState } from "react";
+import ThemeToggle from "./ThemeToggle"; // Adjust path if needed
 
 const typingLines = [
   "a Full Stack Web Developer.",
@@ -44,15 +45,20 @@ const Home = () => {
   }, [typing, charIdx, lineIdx]);
 
   return (
-    <section
-      className="relative min-h-screen w-[100%] mb-20 flex items-center justify-center overflow-hidden"
-      style={{
-        background: `linear-gradient(120deg, rgba(130,130,130,0.7) 0%, rgba(50,50,50,0.4) 100%), url('/profile1.jpg') center/cover no-repeat`,
-        backgroundAttachment: "fixed"
-      }}
-    >
-      {/* Overlay for glass effect */}
-      <div className="absolute inset-0 z-0" />
+    <section className="relative min-h-screen w-full mb-20 overflow-hidden">
+      {/* Theme toggle button for mobile */}
+      <div className="absolute top-4 right-4 z-30 block md:hidden">
+        <ThemeToggle />
+      </div>
+      {/* Section-only, non-scrolling background */}
+      <div
+        className="absolute inset-0 z-0 pointer-events-none"
+        style={{
+          background: `linear-gradient(120deg, rgba(130,130,130,0.7) 0%, rgba(50,50,50,0.4) 100%), url('/profile1.jpg') center/cover no-repeat`,
+          backgroundAttachment: "scroll"
+        }}
+        aria-hidden="true"
+      />
       {/* Content */}
       <div className="relative z-10 pt-[20%] flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg mb-4">
