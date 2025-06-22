@@ -23,11 +23,11 @@ const About = () => {
           <h3 className='text-2xl font-bold text-blue-950/80 dark:text-emerald-700 mb-4'>Full Stack Web Developer & Computer Scientist.</h3>
           <div className='flex flex-wrap justify-between gap-4 mb-2 text-xl'>
             {/* name */}
-            <div className='flex flex-wrap items-center gap-2'>
+            {/* <div className='flex flex-wrap items-center gap-2'>
               <Arrow />
               <h4 className='font-bold'>Full Name: </h4>
               <p>Muhammad Faizan Alam</p>
-            </div>
+            </div> */}
             {/* age */}
             <div className='flex flex-wrap items-center gap-2'>
               <Arrow />

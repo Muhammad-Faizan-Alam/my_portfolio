@@ -3,7 +3,7 @@ import ThemeToggle from './components/ThemeToggle'
 import About from './components/About';
 import Contact from './components/Contact';
 import Services from './components/Services';
-import Experience from './components/Experience';
+import Resume from './components/Resume';
 import Projects from './components/Projects';
 import { sections } from './components/store';
 import Arrow from './ui/Arrow';
@@ -36,7 +36,7 @@ const page = () => {
               <h2 className="text-3xl font-bold text-blue-950/80 dark:text-emerald-700">{name}</h2>
               {name === 'About' && (<About />)}
               {name === 'Projects' && (<Projects />)}
-              {name === 'Experience' && (<Experience />)}
+              {name === 'Resume' && (<Resume />)}
               {name === 'Services' && (<Services />)}
               {name === 'Contact' && (<Contact />)}
             </div>
