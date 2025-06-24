@@ -54,13 +54,24 @@ const Home = () => {
       <div
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
-          background: `linear-gradient(120deg, rgba(130,130,130,0.7) 0%, rgba(50,50,50,0.4) 100%), url('/profile1.jpg') center/cover no-repeat`,
+          backgroundImage: `
+            linear-gradient(120deg, 
+              rgba(130,130,130,0.7) 0%, 
+              rgba(50,50,50,0.4) 100%
+            ), 
+            url('/profile1.jpg')
+          `,
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
           backgroundAttachment: "fixed"
         }}
         aria-hidden="true"
       />
+      {/* Black overlay for both themes */}
+      <div className="absolute inset-0 z-10 pointer-events-none bg-black/60 dark:bg-black/80 transition-colors duration-300" aria-hidden="true" />
       {/* Content */}
-      <div className="relative z-10 flex min-h-screen items-end justify-start text-left px-4 pb-12">
+      <div className="relative z-20 flex min-h-screen items-end justify-start text-left px-4 pb-12">
         <div className="w-full max-w-2xl flex flex-col items-start">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg mb-4">
             MUHAMMAD FAIZAN ALAM
@@ -89,7 +100,7 @@ const Home = () => {
         </div>
       </div>
       {/* Decorative Glow */}
-      <div className="pointer-events-none absolute inset-0 z-0 opacity-60 blur-2xl"
+      <div className="pointer-events-none absolute inset-0 z-20 opacity-60 blur-2xl"
         style={{
           background: 'radial-gradient(circle at 60% 40%, #60a5fa33 0%, transparent 70%)'
         }}
