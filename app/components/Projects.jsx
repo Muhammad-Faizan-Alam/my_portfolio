@@ -44,7 +44,7 @@ const Projects = () => {
         <Carousel className="w-full">
           <CarouselContent>
             {projects.map((proj, idx) => (
-              <CarouselItem key={proj.title} className="flex justify-center">
+              <CarouselItem key={proj.title} className="flex justify-center lg:py-10">
                 <div className="group relative bg-white/80 dark:bg-gray-900/80 border border-blue-100 dark:border-emerald-900 rounded-3xl shadow-2xl w-full max-w-md flex flex-col transition-all duration-500 hover:-translate-y-2 hover:shadow-blue-200/60 dark:hover:shadow-emerald-700/40">
                   {/* Project Image */}
                   <div className="overflow-hidden rounded-t-3xl">
