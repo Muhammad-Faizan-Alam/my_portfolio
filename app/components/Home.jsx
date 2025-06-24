@@ -55,35 +55,37 @@ const Home = () => {
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
           background: `linear-gradient(120deg, rgba(130,130,130,0.7) 0%, rgba(50,50,50,0.4) 100%), url('/profile1.jpg') center/cover no-repeat`,
-          backgroundAttachment: "scroll"
+          backgroundAttachment: "fixed"
         }}
         aria-hidden="true"
       />
       {/* Content */}
-      <div className="relative z-10 pt-[20%] flex flex-col items-center justify-center text-center px-4">
-        <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg mb-4">
-          MUHAMMAD FAIZAN ALAM
-        </h1>
-        <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-emerald-300 mb-2 flex items-center justify-center min-h-[2.5em]">
-          <span className="text-white mr-2">I'm</span>
-          <span className="relative">
-            <span className="text-emerald-300">{displayed}</span>
-            <span className="absolute -right-2 top-0 animate-pulse text-white">|</span>
-          </span>
-        </h2>
-        <div className="mt-8 flex flex-wrap gap-4 justify-center">
-          <a
-            href="#Projects"
-            className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-emerald-400 text-white font-bold shadow-lg hover:scale-105 transition-transform duration-300"
-          >
-            View Projects
-          </a>
-          <a
-            href="#Contact"
-            className="px-6 py-3 rounded-full border border-emerald-400 text-emerald-200 font-bold hover:bg-emerald-600/80 hover:text-white transition"
-          >
-            Contact Me
-          </a>
+      <div className="relative z-10 flex min-h-screen items-end justify-start text-left px-4 pb-12">
+        <div className="w-full max-w-2xl flex flex-col items-start">
+          <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg mb-4">
+            MUHAMMAD FAIZAN ALAM
+          </h1>
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-semibold text-emerald-300 mb-2 flex items-center min-h-[2.5em]">
+            <span className="text-white mr-2">I'm</span>
+            <span className="relative">
+              <span className="text-emerald-300">{displayed}</span>
+              <span className="absolute -right-2 top-0 animate-pulse text-white">|</span>
+            </span>
+          </h2>
+          <div className="mt-8 flex flex-wrap gap-4">
+            <a
+              href="#Projects"
+              className="px-6 py-3 rounded-full bg-gradient-to-r from-blue-600 to-emerald-400 text-white font-bold shadow-lg hover:scale-105 transition-transform duration-300"
+            >
+              View Projects
+            </a>
+            <a
+              href="#Contact"
+              className="px-6 py-3 rounded-full border border-emerald-400 text-emerald-200 font-bold hover:bg-emerald-600/80 hover:text-white transition"
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
       </div>
       {/* Decorative Glow */}
