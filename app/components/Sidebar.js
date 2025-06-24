@@ -52,7 +52,7 @@ const Sidebar = () => {
                         height={100}
                         src="/profile.jpeg"
                         alt='logo'
-                        className='rounded-full border-4 border-blue-200 dark:border-emerald-700 shadow-xl transition-transform duration-500 group-hover:scale-105 bg-white'
+                        className='rounded-full border-4 border-blue-200 dark:border-gray-500 shadow-xl transition-transform duration-500 group-hover:scale-105 bg-white'
                     />
                     <h1 className='text-3xl font-bold'>Faizan</h1>
                     <div className='flex flex-wrap gap-5'>
