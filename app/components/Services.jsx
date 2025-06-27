@@ -60,9 +60,11 @@ const Services = () => {
               className="group relative bg-white/80 dark:bg-gray-900/80 border border-blue-100 dark:border-emerald-900 rounded-3xl shadow-2xl p-8 flex flex-col gap-4 transition-all duration-500 hover:-translate-y-2 hover:shadow-blue-200/60 dark:hover:shadow-emerald-700/40"
             >
               <div className="flex items-center gap-4">
-                <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-blue-600 to-emerald-400 dark:from-emerald-600 dark:to-blue-700 text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                <div>
+                  <span className="inline-flex items-center justify-center w-14 h-14 rounded-full bg-gradient-to-tr from-blue-600 to-emerald-400 dark:from-emerald-600 dark:to-blue-700 text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
                   {srv.icon}
                 </span>
+                </div>
                 <h3 className="text-xl font-bold text-blue-900 dark:text-emerald-300 tracking-tight">{srv.title}</h3>
               </div>
               <p className="text-gray-700 dark:text-gray-300 text-base">{srv.desc}</p>

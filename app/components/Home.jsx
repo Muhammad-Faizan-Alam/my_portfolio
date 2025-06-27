@@ -71,7 +71,7 @@ const Home = () => {
       {/* Black overlay for both themes */}
       <div className="absolute inset-0 z-10 pointer-events-none bg-black/60 dark:bg-black/80 transition-colors duration-300" aria-hidden="true" />
       {/* Content */}
-      <div className="relative z-20 flex min-h-screen items-end justify-start text-left px-4 pb-16">
+      <div className="relative z-20 flex min-h-screen items-end justify-start text-left px-4 pb-16 md:mb-0 mb-5">
         <div className="w-full max-w-2xl flex flex-col items-start">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg mb-4">
             MUHAMMAD FAIZAN ALAM
