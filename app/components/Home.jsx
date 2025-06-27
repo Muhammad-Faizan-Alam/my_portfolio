@@ -47,7 +47,7 @@ const Home = () => {
   return (
     <section className="relative min-h-screen w-full mb-20 overflow-hidden">
       {/* Theme toggle button for mobile */}
-      <div className="absolute top-4 right-4 z-30 block md:hidden">
+      <div className="absolute top-4 right-4 z-30 block lg:hidden">
         <ThemeToggle />
       </div>
       {/* Section-only, non-scrolling background */}
@@ -71,7 +71,7 @@ const Home = () => {
       {/* Black overlay for both themes */}
       <div className="absolute inset-0 z-10 pointer-events-none bg-black/60 dark:bg-black/80 transition-colors duration-300" aria-hidden="true" />
       {/* Content */}
-      <div className="relative z-20 flex min-h-screen items-end justify-start text-left px-4 pb-12">
+      <div className="relative z-20 flex min-h-screen items-end justify-start text-left px-4 pb-16">
         <div className="w-full max-w-2xl flex flex-col items-start">
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white drop-shadow-lg mb-4">
             MUHAMMAD FAIZAN ALAM

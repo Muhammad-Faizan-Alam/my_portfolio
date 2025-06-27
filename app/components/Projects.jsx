@@ -33,7 +33,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <section className="relative py-10 px-2 sm:px-6 md:px-12 lg:px-20">
+    <section className="relative py-10 px-6 sm:px-6 md:px-12 lg:px-20">
       <div className="max-w-3xl mx-auto">
         <h2 className="text-3xl sm:text-4xl font-extrabold text-blue-950 dark:text-emerald-400 mb-2 tracking-tight text-center">
           <span className="bg-gradient-to-r from-blue-600 to-emerald-400 dark:from-emerald-400 dark:to-blue-700 bg-clip-text text-transparent">My Projects</span>

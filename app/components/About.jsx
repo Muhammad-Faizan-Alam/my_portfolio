@@ -37,25 +37,25 @@ const About = () => {
           </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-base sm:text-lg">
             {/* Age */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-top gap-2">
               <Arrow />
               <span className="font-bold">Age:</span>
               <span>22</span>
             </div>
             {/* Degree */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-top gap-2">
               <Arrow />
               <span className="font-bold">Degree:</span>
               <span>BSCS</span>
             </div>
             {/* Location */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-top gap-2">
               <Arrow />
               <span className="font-bold">Location:</span>
               <span>Faisalabad, Pakistan, Asia</span>
             </div>
             {/* Email */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-top gap-2">
               <Arrow />
               <span className="font-bold">Email:</span>
               <a
@@ -66,19 +66,19 @@ const About = () => {
               </a>
             </div>
             {/* Phone */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-top gap-2">
               <Arrow />
               <span className="font-bold">Phone:</span>
               <a href="tel:+923184757136" className="font-mono underline break-all hover:text-blue-700 dark:hover:text-emerald-400 transition">+923184757136</a>
             </div>
             {/* Freelance */}
-            <div className="flex items-center gap-2">
+            <div className="flex items-top gap-2">
               <Arrow />
               <span className="font-bold">Freelance:</span>
               <span className="text-green-600 dark:text-emerald-400 font-semibold">Available</span>
             </div>
             {/* Job */}
-            <div className="flex items-center gap-2 col-span-1 sm:col-span-2">
+            <div className="flex items-top gap-2 col-span-1 sm:col-span-2">
               <Arrow />
               <span className="font-bold">Job:</span>
               <span>Open to work <span className="text-xs text-gray-500">(remote, hybrid & onsite)</span></span>

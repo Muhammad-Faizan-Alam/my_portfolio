@@ -41,7 +41,7 @@ const Sidebar = () => {
     return (
         <div className=''>
             {/* Desktop Sidebar */}
-            <div className='h-screen w-[20vw] md:block hidden p-3 bg-blue-950 dark:bg-gray-950 text-white fixed'>
+            <div className='h-screen w-[20vw] lg:block hidden p-3 bg-blue-950 dark:bg-gray-950 text-white fixed'>
                 <div className='h-full w-full flex flex-col items-center justify-center gap-5'
                     style={{
                         backgroundImage:
@@ -102,7 +102,7 @@ const Sidebar = () => {
             </div>
 
             {/* Mobile Sidebar */}
-            <div className="md:hidden fixed top-4 left-4 z-50">
+            <div className="lg:hidden fixed top-4 left-4 z-50">
                 <button
                     className="w-12 h-12 rounded-full bg-blue-600 dark:bg-blue-900 text-white flex items-center justify-center shadow-lg"
                     onClick={handleOpen}

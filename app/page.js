@@ -13,12 +13,12 @@ import Home from './components/Home';
 
 const page = () => {
   return (
-    <div className='md:ml-[20vw] md:w-[100%] max-w-screen transition-all duration-300'>
+    <div className='lg:ml-[20vw] w-[100%] max-w-screen transition-all duration-300'>
       {/* Home */}
       <Home/>
 
 
-      <div className='p-12'>
+      <div className='md:p-12 p-6'>
         {/* Other Sections */}
       {
         sections.map((sec, index) => {
