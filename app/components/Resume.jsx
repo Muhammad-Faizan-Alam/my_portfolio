@@ -34,6 +34,8 @@ const Resume = () => {
             <div className="flex flex-wrap gap-2">
               <TextBox content="Next.js" />
               <TextBox content="React" />
+              <TextBox content="Node.js" />
+              <TextBox content="Express.js" />
               <TextBox content="MongoDB" />
               <TextBox content="PostgreSQL" />
               <TextBox content="Tailwind CSS" />
