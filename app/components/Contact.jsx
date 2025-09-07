@@ -11,10 +11,10 @@ const Contact = () => {
     e.preventDefault();
     // emailjs.sendForm(process.env.SERVICE_ID, process.env.TEMPLATE_ID, formRef.current, process.env.USER_ID)
     emailjs.sendForm(
-      'service_abc123',
-      'template_xyz456',
+      'service_kzzqaug',
+      'template_pg4hu0w',
       formRef.current,
-      'uQwXyZ123456'
+      'AhqwNL_QIxex_6qtJ'
     )
       .then(() => {
         setSent(true);
