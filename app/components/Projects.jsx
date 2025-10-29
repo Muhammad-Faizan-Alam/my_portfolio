@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: "Zer0-Chat",
-    desc: "MERN stack project with socket.io for live chatting",
+    desc: "Under Development-MERN stack project with socket.io for live chatting",
     image: "/projects/zer0-chat.png",
     tags: ["Express.js", "React.js", "Socket.io", "Node.js", "MongoDB"],
     // link: "/",
