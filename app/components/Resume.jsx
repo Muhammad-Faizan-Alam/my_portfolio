@@ -64,6 +64,11 @@ const Resume = () => {
           <h3 className="text-2xl font-extrabold dark:text-emerald-400 text-blue-800 mb-2 tracking-tight">Experience</h3>
           <div className="space-y-4">
             <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow flex flex-col gap-1">
+              <span className="font-semibold text-lg text-blue-700 dark:text-emerald-400">MERN Stack Developer</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">Softnixt — July 2025 - Present</span>
+              <span className="text-gray-700 dark:text-gray-300">Building and maintaining end-to-end web solutions using the MERN stack, ensuring responsive UI and efficient backend APIs.</span>
+            </div>
+            <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow flex flex-col gap-1">
               <span className="font-semibold text-lg text-blue-700 dark:text-emerald-400">Frontend Intern Developer & Team Leader</span>
               <span className="text-sm text-gray-500 dark:text-gray-400">MinitzGo — March 2025 - May 2025</span>
               <span className="text-gray-700 dark:text-gray-300">Worked on live projects and handled a team of interns as a team leader. Assisted in developing and maintaining web applications, focusing on performance and accessibility.</span>
