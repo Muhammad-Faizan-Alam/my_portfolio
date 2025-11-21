@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import ThemeToggle from "./ThemeToggle"; // Adjust path if needed
 
 const typingLines = [
-  "a Full Stack Web Developer.",
+  "a MERN Stack Web Developer.",
   "a Computer Scientist.",
   "an Open Source Enthusiast.",
   "a Lifelong Learner."
