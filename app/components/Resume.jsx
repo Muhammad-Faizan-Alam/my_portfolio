@@ -31,19 +31,35 @@ const Resume = () => {
           {/* Skills */}
           <div className="p-6 bg-white/80 dark:bg-gray-900/80 rounded-2xl shadow-xl backdrop-blur-md border border-blue-100 dark:border-emerald-900">
             <h3 className="text-2xl font-extrabold dark:text-emerald-400 text-blue-800 mb-2 tracking-tight">Skills</h3>
+            <h4 className="text-lg text-white mt-2 tracking-tight">Frontend Skills</h4>
             <div className="flex flex-wrap gap-2">
               <TextBox content="Next.js" />
               <TextBox content="React" />
+              <TextBox content="Tailwind CSS" />
+              <TextBox content="Redux-Toolkit" />
+              <TextBox content="Zustand" />
+              <TextBox content="TanStack Query, Mutation" />
+              <TextBox content="ShadCN UI" />
+              <TextBox content="Material UI" />
+            </div>
+            <h4 className="text-lg text-white mt-2 tracking-tight">Backend & Database Skills</h4>
+            <div className="flex flex-wrap gap-2">
+              <TextBox content="Next.js" />
               <TextBox content="Node.js" />
               <TextBox content="Express.js" />
               <TextBox content="MongoDB" />
-              <TextBox content="PostgreSQL" />
-              <TextBox content="Tailwind CSS" />
+              <TextBox content="Supabase" />
+              <TextBox content="zod" />
+            </div>
+            <h4 className="text-lg text-white mt-2 tracking-tight">Other Skills</h4>
+            <div className="flex flex-wrap gap-2">
               <TextBox content="JavaScript" />
               <TextBox content="TypeScript" />
-              <TextBox content="Git" />
+              <TextBox content="Python" />
+              <TextBox content="n8n" />
               <TextBox content="GitHub" />
-              <TextBox content="Redux-Toolkit" />
+              <TextBox content="Figma" />
+              <TextBox content="Vercel" />
             </div>
           </div>
         </div>
@@ -65,7 +81,12 @@ const Resume = () => {
           <div className="space-y-4">
             <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow flex flex-col gap-1">
               <span className="font-semibold text-lg text-blue-700 dark:text-emerald-400">MERN Stack Developer</span>
-              <span className="text-sm text-gray-500 dark:text-gray-400">Softnixt — July 2025 - Present</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">Voltic Inc — December 2025 - March 2026</span>
+              <span className="text-gray-700 dark:text-gray-300">worked on products like Primary Inbox (cold emails service). Refactored codebase to implement simple but efficient architecture.</span>
+            </div>
+            <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow flex flex-col gap-1">
+              <span className="font-semibold text-lg text-blue-700 dark:text-emerald-400">MERN Stack Developer</span>
+              <span className="text-sm text-gray-500 dark:text-gray-400">Softnixt — July 2025 - November 2025</span>
               <span className="text-gray-700 dark:text-gray-300">Building and maintaining end-to-end web solutions using the MERN stack, ensuring responsive UI and efficient backend APIs.</span>
             </div>
             <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-lg shadow flex flex-col gap-1">

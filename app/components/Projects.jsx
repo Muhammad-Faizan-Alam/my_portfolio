@@ -6,6 +6,13 @@ import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious
 // Example projects data (replace with your real data)
 const projects = [
   {
+    title: "CattleCare - Dairy Farm Dashboard",
+    desc: "A comprehensive dashboard, features include real-time monitoring of cattle health, milk production tracking, and automated alerts for anomalies.",
+    image: "/projects/cattlecare.png",
+    tags: ["Next.js", "Express.js", "MongoDB", "TypeScript", "n8n", "Zustand", "Sonner", "ShadCN UI", "Socket.io", "Zod", "Auth with Rotatary Refresh Tokens", "Role-Based Access Control", "Figma"],
+    link: "https://cattle-care-five.vercel.app/login",
+  },
+  {
     title: "Erasmus Reviews",
     desc: "A community-driven platform that empowers young Europeans to share honest reviews of Erasmus+ projects, creating transparency and trust in the program.",
     image: "/projects/erasmus.png",
@@ -16,9 +23,23 @@ const projects = [
     title: "E-Pharmacy Store",
     desc: "A scalable & highly secure pharamcy e-commerce web app with product management, cart, and secure checkout. A separate secure Admin side for management. Built using Next.js, and MongoDB. AI integrated for chat, medicines Search by disease or symptoms, etc.",
     image: "/projects/pharmacy.png",
-    tags: ["Next.js", "Shadcn", "MongoDB", "AI Integration", "JWT"],
+    tags: ["Next.js", "Shadcn", "MongoDB", "AI Integration", "JWT", "tesseract.js", "Nodemailer", "ChatBase (chatbot)"],
     link: "https://pharmacy-smoky.vercel.app/",
     github: "https://github.com/Muhammad-Faizan-Alam/ecommerce"
+  },
+  {
+    title: "Auxiltex - Chemical Company Landing Page",
+    desc: "A chemical company landing page with a modern design, built using Next.js and Framer Motion for smooth animations. Integrated Vercel Analytics for performance insights.",
+    image: "/projects/auxiltex.png",
+    tags: ["Next.js", "Framer-Motion", "vercel/analytics"],
+    link: "https://www.auxiltex.com/",
+  },
+  {
+    title: "Real Estate Listing Platform",
+    desc: "A modern real estate listing platform (for Dubai) with a user-friendly interface. Features include property search, filtering, and detailed property views. Integrated MapBox API for location-based search.",
+    image: "/projects/realestate.png",
+    tags: ["React (Vite)", "Express.js", "MongoDB", "MapBox API", "Radix UI", "Zod", "JWT Authentication", "Role-Based Access Control"],
+    link: "https://real-estate-omega-roan.vercel.app",
   },
   {
     title: "Zer0-Chat",
@@ -95,6 +116,7 @@ const Projects = () => {
                       ))}
                     </div>
                     <div className="flex gap-4 mt-auto">
+                      {proj.link && (
                       <a
                         href={proj.link}
                         target="_blank"
@@ -106,6 +128,8 @@ const Projects = () => {
                           <path d="M5 12h14M12 5l7 7-7 7" />
                         </svg>
                       </a>
+                      )}
+                      {proj.github && (
                       <a
                         href={proj.github}
                         target="_blank"
@@ -118,6 +142,7 @@ const Projects = () => {
                           <path d="M8 10h8M8 14h6" />
                         </svg>
                       </a>
+                      )}
                     </div>
                   </div>
                   {/* Decorative Glow */}

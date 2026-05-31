@@ -55,10 +55,10 @@ const Home = () => {
         className="absolute inset-0 z-0 pointer-events-none"
         style={{
           backgroundImage: `
-            linear-gradient(120deg, 
-              rgba(130,130,130,0.7) 0%, 
+            linear-gradient(120deg,
+              rgba(130,130,130,0.7) 0%,
               rgba(50,50,50,0.4) 100%
-            ), 
+            ),
             url('/profile1.jpg')
           `,
           backgroundPosition: "center",
